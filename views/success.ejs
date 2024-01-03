@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration successful | Interior Chanakya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../images/fevi.png" type="image/png">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&family=Roboto:wght@500&display=swap');
+
+    * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        background-color: #F2F1EE;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        width: 30%;
+        height: 50%;
+        background-color: #F2F1EE;
+        border: 1px solid #D6B781;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2% 2%;
+    }
+
+    .image {
+        width: 50%;
+        height: 100%;
+        /* background-color: red; */
+        background-image: url('../images/fevi.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .rs {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .rs h3 {
+        color: #141313;
+        font-size: 2rem;
+    }
+
+    @media (max-width: 600px) {
+        .card {
+            flex-direction: column;
+            /* Stack elements vertically */
+            width: 70%;
+            /* Adjust width for smaller screens */
+        }
+
+        .image {
+            width: 100%;
+            /* Make the image take up the full width */
+            margin-bottom: 10px;
+            /* Add some space between image and text */
+        }
+
+        .rs {
+            align-items: center;
+            /* Center text horizontally */
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image"></div>
+            <div class="rs">
+                <h3>Registration</h3>
+                <h3>successful</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in touch | Interior Chanakya</title>
+    <link rel="stylesheet" href="../public/css/getInTouch.css">
+    <link rel="icon" href="../images/fevi.png" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="line"></div>
+        <div class="box">
+            <form action="/register" method="post" target="_blank">
+                <div class="one partition ">
+                    <div class="left">
+                        <label class="label" for="name">Name</label>
+                        <input type="text" id="name" name="username" placeholder="John Carter">
+                        <div class="underline"></div>
+                    </div>
+                    <div class="right">
+                        <label class="label" for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="xyz@gmail.com">
+                        <div class="underline"></div>
+                    </div>
+                </div>
+                <div class="two partition ">
+                    <div class="left">
+                        <label class="label" for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(+91)-99999999">
+                        <div class="underline"></div>
+                    </div>
+                    <div class="right">
+                        <label class="label" for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Ex. Services">
+                        <div class="underline"></div>
+                    </div>
+                </div>
+                <div class="three partition ">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message"
+                        placeholder="Please describe what services you are interested in....">
+                    <div class="underline"></div>
+                </div>
+                <div class="four partition ">
+                    <button type="submit">Send message <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+            </form>
+        </div>
+        <div class="line"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+    
+            form.addEventListener('submit', function (event) {
+                const nameInput = document.querySelector('input[name="username"]');
+                const phoneInput = document.querySelector('input[name="phone"]');
+                const emailInput = document.querySelector('input[name="email"]');
+    
+                if (!nameInput.value.trim() || !phoneInput.value.trim() || !emailInput.value.trim()) {
+                    alert('Name, phone number, and email cannot be empty');
+                    event.preventDefault(); // Prevent the form from submitting
+                }
+            });
+        });
+    </script>
+    
+    </body>
+    </html>
